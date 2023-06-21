@@ -80,7 +80,7 @@ Bu çalışmada Türkiye'nin 2005-2023 arası yıllara göre aylık enflasyon de
 
 ```{r ,echo=FALSE}
 library(readxl)
-veri <- read_excel("~/Desktop/18080103 2/data/veri.xlsx")
+veri <- read_excel("~/Desktop/18080103/data/veri.xlsx")
 veri <- veri |> janitor::clean_names()
 veri <- veri[, -1]  
 
@@ -113,7 +113,7 @@ veri %>%
 ```
 
 ```{r ,echo=FALSE}
-setwd("~/Desktop/18080103 2/data")
+setwd("~/Desktop/18080103/data")
 
 library(corrplot)
 
