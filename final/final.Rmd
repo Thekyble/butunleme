@@ -57,7 +57,7 @@ Son zamanlarda, bazı çalışmalarda Phillips eğrisinin eğiminin makroekonomi
 ## Çalışmanın Amacı
  Bu projenin amacı, Türkiye'deki 2005-2023 dönemi boyunca Phillips eğrisinin geçerli olup olmadığını araştırmaktır. Türkiye'nin içinde bulunduğu enflasyonist ortamın işsizlik üzerindeki etkisi tartışılacaktır. Phillips eğrisinin doğrusal ve doğrusal olmayan modelleri kullanılarak, Türkiye'nin özgülünde kronik yüksek enflasyonun ve işsizliğin nedenleri ile hanehalkı üzerindeki etkileri açıklanmaya çalışılacaktır. Bu çalışma, akademik ve profesyonel bir yaklaşımla gerçekleştirilecektir.
  
-![Philips Eğrisi]("~/Desktop/18080103 2/philips-egrisi.jpg")
+![Philips Eğrisi]("~/Desktop/18080103/philips-egrisi.jpg")
 w
 \newpage
 
