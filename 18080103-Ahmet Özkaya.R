@@ -1,12 +1,13 @@
 # -------------------------------------------------------------------------- ###
-# Soru 1a ----https://github.com/Thekyble/butunleme.git
+# Soru 1a ----
+https://github.com/Thekyble/butunleme.git
 # -------------------------------------------------------------------------- ###
 
 
 
 # -------------------------------------------------------------------------- ###
 # Soru 2a ----
-#library("dplyr")
+library("dplyr")
 kadın_ortalama <- titanic %>%
 filter(Sex == "female") %>%
   summarise(ortalama_odeme = mean(fare))
@@ -22,7 +23,7 @@ print(erkek_ortalama)
 
 # -------------------------------------------------------------------------- ###
 # Soru 2b ----
-#library(tidyverse)
+library(tidyverse)
 
 filtered_titanic <- titanic %>%
   drop_na(fare)
@@ -34,7 +35,7 @@ ggplot(filtered_titanic, aes(x = sex, y = fare)) +
 
 # -------------------------------------------------------------------------- ###
 # Soru 2c ----
-#library(tidyverse)
+library(tidyverse)
 
 ortalama_yaş <- mean(titanic$Age)
 
@@ -50,7 +51,7 @@ ggplot(df, aes(x = Age)) +
 
 
 # --------------------------------------------------------------------------
-#library(tidyverse)
+library(tidyverse)
 
 ggplot(titanic, aes(x = Age)) +
   geom_histogram(aes(y = ..density..), color = “black”, fill =”white”) +
@@ -60,7 +61,7 @@ ggplot(titanic, aes(x = Age)) +
 
 # -------------------------------------------------------------------------- ###
 # Soru 3b ----
-#library(dplyr)
+library(dplyr)
 
 dat3 <- inner_join(dat1, dat2)
 # library(dplyr)
