@@ -51,17 +51,9 @@ Son zamanlarda, bazı çalışmalarda Phillips eğrisinin eğiminin makroekonomi
 
 1980-2015 yılları arasındaki yıllık enflasyon ve işsizlik verileri kullanılarak, Türkiye ekonomisindeki işsizlik ve enflasyon arasındaki kısa ve uzun dönemli ilişkileri incelemek için gerekli ekonometrik analizler yapılmıştır. Elde edilen sonuçlar, işsizlik ve enflasyon arasında çift yönlü nedensellik ilişkisinin varlığına ulaşılamadığını göstermektedir. Yani, işsizliğin enflasyonun nedeni olmadığı ve aynı şekilde enflasyonun da işsizliğin nedeni olmadığı sonucuna varılmıştır. @petek2017philips
 
-
- 
-
 ## Çalışmanın Amacı
  Bu projenin amacı, Türkiye'deki 2005-2023 dönemi boyunca Phillips eğrisinin geçerli olup olmadığını araştırmaktır. Türkiye'nin içinde bulunduğu enflasyonist ortamın işsizlik üzerindeki etkisi tartışılacaktır. Phillips eğrisinin doğrusal ve doğrusal olmayan modelleri kullanılarak, Türkiye'nin özgülünde kronik yüksek enflasyonun ve işsizliğin nedenleri ile hanehalkı üzerindeki etkileri açıklanmaya çalışılacaktır. Bu çalışma, akademik ve profesyonel bir yaklaşımla gerçekleştirilecektir.
- ![Philips Eğrisi]("~/Desktop/18080103/philips-egrisi.jpg")
-
-
-
-
-
+ 
 ## Literatür 
 İktisat literatüründe, enflasyon ve işsizlik arasındaki bağlantıları ele alan birçok makale bulunmaktadır. Bu çalışmalarda, farklı ülke ve bölgelerde Philips eğrisinin geçerli olduğu sonucuna varılmışken, bazı çalışmalarda herhangi bir ilişkinin olmadığı görülmüştür. Aşağıda, literatürdeki temel ampirik çalışmalar özetlenmiştir.
 
@@ -73,14 +65,24 @@ Son zamanlarda, bazı çalışmalarda Phillips eğrisinin eğiminin makroekonomi
 
 
 
+ **Phillips Eğrisi**,
+Yeni Zelandalı iktisatçı Alban William Phillips tarafından yapılan bir araştırma @philips1958relationship İngiltere ekonomisi üzerinde sonucunda geliştirilen Phillips eğrisi analizi, enflasyonla işsizlik arasında ters yönlü ilişki olduğunu ortaya koyar.
+
+![Philips Eğrisi]("~/Desktop/18080103/philips-egrisi.jpg")
 \newpage
  
 # Veri 
 Bu çalışmada Türkiye'nin 2005-2023 arası yıllara göre aylık enflasyon değişimi ve işssizlik verileri ([TÜİK veri portalı](https://data.tuik.gov.tr/)) dan alınmıştır. İşsizlik ve aylık-yıllık TÜFE verileri bir araya getirilerek analiz edilmiştir. Bu istatistikler, ilgili değişkenlerin merkezi eğilim, yayılma ve dağılım özellikleri hakkında bilgi sağlamaktadır. Veri noktalarının dağılımı, regresyon çizgisi üzerindeki sapmalar ve veri noktalarının yoğunlaşması gibi faktörler, analizimize katkıda bulunabilir. Örneğin, işsizlik oranı değişkeninin ortalama değeri 10.52 olduğundan, ortalama işsizlik oranının bu değere yakın olduğu söylenebilir. Nüfus değişkeninin standart sapması 5059.14 olduğundan, nüfus verisinin ortalama değerden ne kadar uzaklaştığını göstermektedir. İşsizlik oranı ve istihdam oranı verilerinin düşük standart sapmalara sahip olması, nispeten güvenilir olduklarını göstermektedir.
 
+```{r, echo=FALSE}
+library(tidyverse)
+library(here)
+.<- readxl::read_xlsx(here("../data/veri.xlsx"))
+```
+
 ```{r ,echo=FALSE}
 library(readxl)
-veri <- read_excel("~/Desktop/18080103/data/veri.xlsx")
+veri <- read_excel("../data/veri.xlsx")
 veri <- veri |> janitor::clean_names()
 veri <- veri[, -1]  
 
@@ -113,7 +115,7 @@ veri %>%
 ```
 
 ```{r ,echo=FALSE}
-setwd("~/Desktop/18080103/data")
+setwd(here("../data"))
 
 library(corrplot)
 
@@ -121,7 +123,8 @@ data <- read_excel("veri.xlsx")
 
 ```
 
-Verimiz 218 satır, 11 kolon içermektedir. Veri en son 2023 şubat ayına kadar olan verileri göstermektedir. Elimizdeki tüm verilerin listesi şu şekildedir: Yıl, Ay, İş Gücüne Katılabilecek Nüfus, İş Gücü, İstihdam, İşsiz Sayısı, İş Gücüne Katılım Oranı, İstihdam Oranı, İşsizlik Oranı, Aylık TÜFE ve Yıllık TÜFE.
+Verimiz 218 satır, 11 kolon içermektedir. Veri en son 2023 şubat ayına kadar olan verileri göstermektedir. Elimizdeki tüm verilerin listesi şu şekildedir: 
+Yıl, Ay, İş Gücüne Katılabilecek Nüfus, İş Gücü, İstihdam, İşsiz Sayısı, İş Gücüne Katılım Oranı, İstihdam Oranı, İşsizlik Oranı, Aylık TÜFE ve Yıllık TÜFE.
 
 Aşağıda, araştırılan parametrelerin korelasyon matrisini gösteren bir tablo bulunmaktadır. Bu matris, elde ettiğimiz verilerin arasındaki ilişkileri anlamamıza yardımcı olacak bir analiz aracıdır. Korelasyon matrisi, araştırma sonucu hakkında genel bir çerçeve çizebilme amacıyla kullanılmıştır.
 
@@ -193,4 +196,3 @@ Yukarıdaki lineer regresyon çıktısından da görülebileceği gibi regresyon
 \newpage
 # Kaynakça {#references}
 <div id="refs"></div>
-
