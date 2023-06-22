@@ -62,7 +62,7 @@ Son zamanlarda, bazı çalışmalarda Phillips eğrisinin eğiminin makroekonomi
 
 @eliasson2001short, İsveç, Avustralya ve ABD için regresyon analizi kullanarak araştırma yapmıştır. Avustralya ve İsveç'te değişkenler arasında doğrusal bir Philips eğrisi olduğunu belirtirken, ABD için doğrusal olmayan bir Philips eğrisinin var olduğunu göstermiştir.
 
-@petek2017philips, 1980-2015 dönemi için Türkiye ekonomisi açısından Philips eğrisinin geçerliliğini test etmeyi amaçlayarak eşbütünleşme analizi, Granger nedensellik testi ve VAR analizini kullanmışlardır. Yaptıkları analizler sonucunda Türkiye ekonomisinde enflasyon ile işsizlik arasında nedensellik ilişkisinin tespit edilemediğini ortaya koymuşlardır.
+@petek2017philips, 1980-2015 dönemi için Türkiye ekonomisi açısından Philips eğrisinin geçerliliğini test etmeyi amaçlayarak eşbütünleşme analizi, Granger nedensellik testi ve VAR analizini kullanmışlardır. **Yaptıkları analizler sonucunda Türkiye ekonomisinde enflasyon ile işsizlik arasında nedensellik ilişkisinin tespit edilemediğini ortaya koymuşlardır.**
 
 
 
