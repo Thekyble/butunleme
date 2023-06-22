@@ -69,7 +69,7 @@ Son zamanlarda, bazı çalışmalarda Phillips eğrisinin eğiminin makroekonomi
  **Phillips Eğrisi**,
 Yeni Zelandalı iktisatçı Alban William Phillips tarafından yapılan bir araştırma @philips1958relationship İngiltere ekonomisi üzerinde sonucunda geliştirilen Phillips eğrisi analizi, enflasyonla işsizlik arasında ters yönlü ilişki olduğunu ortaya koyar.
 
-![Philips Eğrisi]("~/Desktop/18080103/philips-egrisi.jpg")
+
 \newpage
  
 # Veri 
@@ -83,7 +83,7 @@ library(here)
 
 ```{r ,echo=FALSE}
 library(readxl)
-veri <- read_excel("../data/veri.xlsx")
+veri <- read_excel(here("../data/veri.xlsx"))
 veri <- veri |> janitor::clean_names()
 veri <- veri[, -1]  
 
