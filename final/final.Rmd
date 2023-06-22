@@ -56,7 +56,7 @@ Son zamanlarda, bazı çalışmalarda Phillips eğrisinin eğiminin makroekonomi
  \newpage
  
 ## Literatür 
-İktisat literatüründe, enflasyon ve işsizlik arasındaki bağlantıları ele alan birçok makale bulunmaktadır. Bu çalışmalarda, farklı ülke ve bölgelerde Philips eğrisinin geçerli olduğu sonucuna varılmışken, bazı çalışmalarda herhangi bir ilişkinin olmadığı görülmüştür. Aşağıda, literatürdeki temel ampirik çalışmalar eğrinin ülkeden ülkeye ve dönemler arasında farklılaşma olduğunu göstermektedir.
+İktisat literatüründe, enflasyon ve işsizlik arasındaki bağlantıları ele alan birçok makale bulunmaktadır. Bu çalışmalarda, farklı ülke ve bölgelerde Philips eğrisinin geçerli olduğu sonucuna varılmışken, bazı çalışmalarda herhangi bir ilişkinin olmadığı görülmüştür. Aşağıda, literatürdeki temel ampirik çalışmalar eğrinin geçerliliği, ülkeden ülkeye ve dönemler arasında farklı olduğunu göstermektedir.
 
 @uysal2004enflasyon, Türkiye ekonomisindeki işsizlik-enflasyon ilişkisini 1980-2002 dönemi için regresyon analizi ve nedensellik testiyle incelemişlerdir. Türkiye'de 1990-2011 döneminde Philips eğrisinin geçerliliğini regresyon analizi yoluyla oranlar arasındaki ilişkiye bakarak değerlendirmişlerdir.
 
